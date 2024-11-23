@@ -1,0 +1,7 @@
+/Users/glebzvonkov/Downloads/rust/Project1724/server/target/debug/deps/libserver-2050ba55f463116f.rmeta: src/main.rs src/command_handler.rs src/user_manager.rs
+
+/Users/glebzvonkov/Downloads/rust/Project1724/server/target/debug/deps/server-2050ba55f463116f.d: src/main.rs src/command_handler.rs src/user_manager.rs
+
+src/main.rs:
+src/command_handler.rs:
+src/user_manager.rs:

@@ -1,0 +1,15 @@
+[package]
+name = "server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rocket = "0.5.1"
+serde = "*"
+serde_json = "*"
+futures = "*"
+ws = { package = "rocket_ws", version = "0.1.1" }
+tokio = "1.0"
+bcrypt = "0.12"
+tokio-tungstenite = "0.15"
+futures-util = "0.3"                              # for SinkExt, StreamExt # or latest version

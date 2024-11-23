@@ -1,0 +1,9 @@
+/Users/glebzvonkov/Downloads/rust/Project1724/client/target/debug/deps/libtokio_reactor-aea6469fd1984c88.rmeta: /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-reactor-0.1.12/src/lib.rs /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-reactor-0.1.12/src/background.rs /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-reactor-0.1.12/src/poll_evented.rs /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-reactor-0.1.12/src/registration.rs /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-reactor-0.1.12/src/sharded_rwlock.rs
+
+/Users/glebzvonkov/Downloads/rust/Project1724/client/target/debug/deps/tokio_reactor-aea6469fd1984c88.d: /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-reactor-0.1.12/src/lib.rs /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-reactor-0.1.12/src/background.rs /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-reactor-0.1.12/src/poll_evented.rs /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-reactor-0.1.12/src/registration.rs /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-reactor-0.1.12/src/sharded_rwlock.rs
+
+/Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-reactor-0.1.12/src/lib.rs:
+/Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-reactor-0.1.12/src/background.rs:
+/Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-reactor-0.1.12/src/poll_evented.rs:
+/Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-reactor-0.1.12/src/registration.rs:
+/Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-reactor-0.1.12/src/sharded_rwlock.rs:

@@ -1,0 +1,1 @@
+/Users/glebzvonkov/Downloads/rust/Project1724/server/target/debug/server: /Users/glebzvonkov/Downloads/rust/Project1724/server/src/command_handler.rs /Users/glebzvonkov/Downloads/rust/Project1724/server/src/main.rs /Users/glebzvonkov/Downloads/rust/Project1724/server/src/user_manager.rs

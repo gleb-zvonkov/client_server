@@ -1,0 +1,11 @@
+/Users/glebzvonkov/Downloads/rust/Project1724/client/target/debug/deps/libbase64-a8b9a8dcbe08c74c.rmeta: /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.9.3/src/lib.rs /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.9.3/src/chunked_encoder.rs /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.9.3/src/display.rs /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.9.3/src/line_wrap.rs /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.9.3/src/tables.rs /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.9.3/src/encode.rs /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.9.3/src/decode.rs
+
+/Users/glebzvonkov/Downloads/rust/Project1724/client/target/debug/deps/base64-a8b9a8dcbe08c74c.d: /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.9.3/src/lib.rs /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.9.3/src/chunked_encoder.rs /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.9.3/src/display.rs /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.9.3/src/line_wrap.rs /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.9.3/src/tables.rs /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.9.3/src/encode.rs /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.9.3/src/decode.rs
+
+/Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.9.3/src/lib.rs:
+/Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.9.3/src/chunked_encoder.rs:
+/Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.9.3/src/display.rs:
+/Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.9.3/src/line_wrap.rs:
+/Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.9.3/src/tables.rs:
+/Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.9.3/src/encode.rs:
+/Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base64-0.9.3/src/decode.rs:

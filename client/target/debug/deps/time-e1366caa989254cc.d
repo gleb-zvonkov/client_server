@@ -1,0 +1,11 @@
+/Users/glebzvonkov/Downloads/rust/Project1724/client/target/debug/deps/libtime-e1366caa989254cc.rmeta: /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/time-0.1.45/src/lib.rs /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/time-0.1.45/src/display.rs /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/time-0.1.45/src/duration.rs /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/time-0.1.45/src/parse.rs /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/time-0.1.45/src/sys.rs
+
+/Users/glebzvonkov/Downloads/rust/Project1724/client/target/debug/deps/libtime-e1366caa989254cc.rlib: /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/time-0.1.45/src/lib.rs /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/time-0.1.45/src/display.rs /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/time-0.1.45/src/duration.rs /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/time-0.1.45/src/parse.rs /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/time-0.1.45/src/sys.rs
+
+/Users/glebzvonkov/Downloads/rust/Project1724/client/target/debug/deps/time-e1366caa989254cc.d: /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/time-0.1.45/src/lib.rs /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/time-0.1.45/src/display.rs /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/time-0.1.45/src/duration.rs /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/time-0.1.45/src/parse.rs /Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/time-0.1.45/src/sys.rs
+
+/Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/time-0.1.45/src/lib.rs:
+/Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/time-0.1.45/src/display.rs:
+/Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/time-0.1.45/src/duration.rs:
+/Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/time-0.1.45/src/parse.rs:
+/Users/glebzvonkov/.cargo/registry/src/index.crates.io-6f17d22bba15001f/time-0.1.45/src/sys.rs:
