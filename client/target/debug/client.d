@@ -1,1 +1,1 @@
-/Users/glebzvonkov/Downloads/rust/Project1724/client/target/debug/client: /Users/glebzvonkov/Downloads/rust/Project1724/client/src/file_handler.rs /Users/glebzvonkov/Downloads/rust/Project1724/client/src/main.rs
+/Users/glebzvonkov/Downloads/rust/client_server/client/target/debug/client: /Users/glebzvonkov/Downloads/rust/client_server/client/src/file_handler.rs /Users/glebzvonkov/Downloads/rust/client_server/client/src/main.rs

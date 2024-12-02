@@ -13,44 +13,44 @@ An unbounded channel is used for asynchronous message handling, allowing efficie
 ## Setup
 Start the server via cargo run.
 Start any number of clients via cargo run.
-Follow the instructions for inputing commans using the client.
+Follow the instructions for inputing commands using the client.
 
 ## Commands
-### User Registration & Login:
-1. Register a new account:
-   reg -u userName -p password
+### User Registration & Login: 
+1. Register a new account: 
+   reg -u userName -p password   
    Example: reg -u JohnDoe -p mySecurePassword
 
-2. Login to an existing account:
-   login -u userName -p password
+2. Login to an existing account: 
+   login -u userName -p password   
    Example: login -u JohnDoe -p mySecurePassword
 
-### One-on-One Messaging:
-3. Send a message to another user:
-   text -u otherUser message
+### Messaging:
+3. Send a message to another user: 
+   text -u otherUser message   
    Example: text -u JaneDoe Hello, how are you?
 
-4. Send a message to multiple users:
-   textMultiple -u user1 user2 -t message
+4. Send a message to multiple users: 
+   textMultiple -u user1 user2 -t message    
    Example: textMultiple -u John -t Meeting at 5 PM!
 
-### Group Chat:
-5. Start a new group chat:
-   startchat chatName
-   Example: startchat WorkTeam
+### Group Chat: 
+5. Start a new group chat: 
+   startchat chatName  
+   Example: startchat WorkTeam 
 
-6. Join an existing group chat:
-   joinchat chatName
-   Example: joinchat WorkTeam
+6. Join an existing group chat: 
+   joinchat chatName  
+   Example: joinchat WorkTeam 
 
-7. Send a message to a group chat:
-   message sentence
+7. Send a message to a group chat: 
+   message sentence 
    Example: message Good morning everyone!
 
-### File Sharing:
-8. Send a file to another user:
-   file -u otherUser filePath
-   Example: file -u JaneDoe /path/to/document.pdf
+### File Sharing: 
+8. Send a file to another user: 
+   file -u otherUser filePath 
+   Example: file -u JaneDoe /Users/glebzvonkov/Downloads/rust/client_server/testsend.txt 
 
 
 ## Server/src
