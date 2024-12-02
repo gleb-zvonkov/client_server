@@ -43,8 +43,7 @@ Follow the instructions for inputing commands using the client.
    joinchat chatName  
    Example: joinchat WorkTeam 
 
-7. Send a message to a group chat:     
-   message sentence        
+7. Send a message to a group chat: message sentence          
    Example: message Good morning everyone!    
 
 ### File Sharing: 
