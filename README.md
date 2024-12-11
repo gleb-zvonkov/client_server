@@ -72,54 +72,54 @@ On the client side the the file_handler module contains functions for sending an
 
 
 ### Reproducibility Guide
-We tested our program on macOS Sonoma.
-An easy way try all the feature is to follow along with the video demo.
+We tested our program on macOS Sonoma.  
+An easy way try all the feature is to follow along with the video demo.  
 
-Open a terminal for the server.
-`cd server` and `cargo run`.
+Open a terminal for the server.  
+`cd server` and `cargo run`.  
 
-Open any number of terminals for the clients, each terminal will have one client instance running.
-For each client terminal `cd cleint` and `cargo run`.
+Open any number of terminals for the clients, each terminal will have one client instance running.  
+For each client terminal `cd cleint` and `cargo run`.  
 
 The rest of the guide assumes you are running three clients.
 
-In each client terminal register a user.
-Terminal 1: `reg -u user1 -p password`.
-Terminal 2: `reg -u user2 -p password`.
-Terminal 3: `reg -u user3 -p password`.
+In each client terminal register a user.  
+Terminal 1: `reg -u user1 -p password`.  
+Terminal 2: `reg -u user2 -p password`.   
+Terminal 3: `reg -u user3 -p password`.  
 
-In each cleint terminal login a user.
-Terminal 1: `login -u user1 -p password`.
-Terminal 2: `login -u user2 -p password`.
-Terminal 3: `login -u user3 -p password`.
+In each cleint terminal login a user.  
+Terminal 1: `login -u user1 -p password`.    
+Terminal 2: `login -u user2 -p password`.  
+Terminal 3: `login -u user3 -p password`.  
 
-Send a message from user1 to user2.
-Terminal 1: `text -u user2 hi other user hows it going`.
+Send a message from user1 to user2.  
+Terminal 1: `text -u user2 hi other user hows it going`.  
 
-Send a message from user1 to user2 and user3.
-Terminal 1: `textMultiple -u user2 user3 -t hi two users hows it going`.
+Send a message from user1 to user2 and user3.  
+Terminal 1: `textMultiple -u user2 user3 -t hi two users hows it going`.  
 
-Start a groupchat from user1.
-Terminal 1: `startchat chatx`.
+Start a groupchat from user1.  
+Terminal 1: `startchat chatx`.  
 
-Join the groupchat from user2 and user3.
-Terminal 2: `joinchat chatx`.
-Terminal 3: `joinchat chatx`.
+Join the groupchat from user2 and user3.  
+Terminal 2: `joinchat chatx`.  
+Terminal 3: `joinchat chatx`.  
 
-Send a message in the groupchat.
-Terminal 1: `message hey guys`.
-Terminal 2: `message hey the groupchats working`.
-Terminal 3: `message yes it should be working`.
+Send a message in the groupchat.  
+Terminal 1: `message hey guys`.  
+Terminal 2: `message hey the groupchats working`.  
+Terminal 3: `message yes it should be working`.  
 
-Send a file from user1 to user3.
-We have placed a testsend.txt in the client_server folder.
-By sending it to a another user it should appear in the client_server/client subfolder.
-Terminal 1:  `file -u user2 ../testsend.txt`.
-Naviagete to client_server/client testsend.txt should now appear there.
+Send a file from user1 to user3.  
+We have placed a testsend.txt in the client_server folder.  
+By sending it to a another user it should appear in the client_server/client subfolder.  
+Terminal 1:  `file -u user2 ../testsend.txt`.  
+Naviagete to client_server/client testsend.txt should now appear there.  
 
 
 ## Contribution by Each Team Member
-The two members of the team made equal contribution to the project.
+The two members of the team made equal contribution to the project.  
 
 Mingcheng:
 He created the foundation of the program, including the server backend and frontend.
@@ -147,41 +147,41 @@ The experience underscored the importance of testing and debugging in Rust, espe
 ### Commands
 #### User Registration & Login:
 1. Register a new account:
-   reg -u userName -p password
-   Example: `reg -u JohnDoe -p mySecurePassword`
+   reg -u userName -p password       
+   Example: `reg -u JohnDoe -p mySecurePassword`  
 
 2. Login to an existing account:
-   login -u userName -p password
+   login -u userName -p password    
    Example: `login -u JohnDoe -p mySecurePassword`
 
 #### Messaging:
 3. Send a message to another user:
-   text -u otherUser message
+   text -u otherUser message    
    Example: `text -u JaneDoe Hello, how are you?`
 
 4. Send a message to multiple users:
-   textMultiple -u user1 user2 -t message
+   textMultiple -u user1 user2 -t message     
    Example: `textMultiple -u John -t Meeting at 5 PM!`
 
 #### Group Chat:
 5. Start a new group chat:
-   startchat chatName
+   startchat chatName   
    Example: `startchat WorkTeam`
 
 6. Join an existing group chat:
-   joinchat chatName
+   joinchat chatName     
    Example: `joinchat WorkTeam`
 
-7. Send a message to a group chat: message sentence
+7. Send a message to a group chat: message sentence    
    Example: `message Good morning everyone!`
 
 8. Quit an existing group chat:
-   quitchat chatName
+   quitchat chatName      
    Example: `quit WorkTeam`
 
 #### File Sharing:
 9. Send a file to another user:
-   file -u otherUser filePath
+   file -u otherUser filePath     
    Example: `file -u JaneDoe ../testsend.txt`
 
 
@@ -196,36 +196,36 @@ fn rocket() -> _;
 
 ### user_manager.rs
 impl UserManager {
-    pub fn new(file_path: &str) -> UserManager;
-    pub fn load(file_path: &str) -> Result<UserManager, ChatError>;
-    pub fn save(self: &Self) -> Result<(), ChatError>;
-    pub fn add(self: &mut Self, user: &User) -> Result<(), ChatError>;
-    pub fn get_current_chat(&self, user_name: &str) -> Option<String>;
+    pub fn new(file_path: &str) -> UserManager;      
+    pub fn load(file_path: &str) -> Result<UserManager, ChatError>;        
+    pub fn save(self: &Self) -> Result<(), ChatError>;      
+    pub fn add(self: &mut Self, user: &User) -> Result<(), ChatError>;       
+    pub fn get_current_chat(&self, user_name: &str) -> Option<String>;        
     pub fn set_current_chat(
         &mut self,
         user_name: &str,
         chat: Option<String>,
     ) -> Result<(), ChatError>;
-    pub fn authenticate(&self, name: &str, password: &str) -> Result<bool, ChatError>;
+    pub fn authenticate(&self, name: &str, password: &str) -> Result<bool, ChatError>;      
 }
 
 ### command_handlers.rs
-fn parse_reg(line: &str) -> Option<Command>;
-fn parse_login(line: &str) -> Option<Command>;
-fn parse_text(line: &str) -> Option<Command>;
-fn parse_text_multiple(line: &str) -> Option<Command>;
-fn parse_start_chat(line: &str) -> Option<Command>;
-fn parse_join_chat(line: &str) -> Option<Command>;
-fn parse_message_chat(line: &str) -> Option<Command>;
-fn parse_quit_chat(line: &str) -> Option<Command>;
-fn parse_file_command(line: &str) -> Option<Command>;
-fn parse_quit(line: &str) -> Option<Command>;
+fn parse_reg(line: &str) -> Option<Command>;      
+fn parse_login(line: &str) -> Option<Command>;      
+fn parse_text(line: &str) -> Option<Command>;      
+fn parse_text_multiple(line: &str) -> Option<Command>;      
+fn parse_start_chat(line: &str) -> Option<Command>;      
+fn parse_join_chat(line: &str) -> Option<Command>;     
+fn parse_message_chat(line: &str) -> Option<Command>;     
+fn parse_quit_chat(line: &str) -> Option<Command>;      
+fn parse_file_command(line: &str) -> Option<Command>;     
+fn parse_quit(line: &str) -> Option<Command>;        
 async fn handle_register(
     user_manager: &mut UserManager,
     name: String,
     password: String,
     stream: &mut DuplexStream,
-);
+);      
 async fn handle_login(
     user_manager: &mut UserManager,
     name: String,
@@ -233,46 +233,46 @@ async fn handle_login(
     current_user: &mut Option<String>,
     sender: futures::channel::mpsc::UnboundedSender<Vec<u8>>,
     stream: &mut DuplexStream,
-);
+);      
 async fn handle_text_message(
     user_manager: &mut UserManager,
     current_user: Option<String>,
     name: String,
     content: String,
     stream: &mut DuplexStream,
-);
+);      
 async fn handle_text_multiple(
     user_manager: &mut UserManager,
     current_user: Option<String>,
     names: Vec<String>,
     content: String,
     stream: &mut DuplexStream,
-);
+);     
 async fn handle_start_chat(
     user_manager: &mut UserManager,
     current_user: Option<String>,
     name: String,
     stream: &mut DuplexStream,
-);
+);      
 async fn handle_message_chat(
     user_manager: &mut UserManager,
     cur: Option<String>,
     content: String,
     stream: &mut DuplexStream,
-);
+);     
 async fn handle_quit_chat(
     user_manager: &mut UserManager,
     cur: Option<String>,
     name: String,
     stream: &mut DuplexStream,
-);
+);     
 async fn handle_file_message(
     user_manager: &mut UserManager,
     current_user: Option<String>,
     filename: String,
     file_path: String,
     stream: &mut DuplexStream,
-);
+);       
 async fn receive_and_forward_file(
     stream: &mut DuplexStream,
     channel: &mut UnboundedSender<Vec<u8>>,
@@ -283,7 +283,7 @@ async fn notify_chat_users(
     sender_name: &str,
     chat_users: HashSet<String>,
     message: &str,
-);
+);      
 fn parse_command(cmd: &str) -> Option<Command>
 pub async fn handle_command(
     user_manager: &Arc<Mutex<UserManager>>,
@@ -291,20 +291,20 @@ pub async fn handle_command(
     stream: &mut DuplexStream,
     sender: UnboundedSender<Vec<u8>>,
     message: &str,
-);
+);      
 
 ## Client/src
 ### main.rs
-fn print_commands();
-fn send_loop(channel_reciever: Receiver<OwnedMessage>, mut socket_sender: Writer<TcpStream>);
-fn receive_loop(mut socket_receiver: Reader<TcpStream>, channel_sender: Sender<OwnedMessage>);
-fn input_to_channel(channel_sender: Sender<OwnedMessage>);
-fn main();
+fn print_commands();      
+fn send_loop(channel_reciever: Receiver<OwnedMessage>, mut socket_sender: Writer<TcpStream>);      
+fn receive_loop(mut socket_receiver: Reader<TcpStream>, channel_sender: Sender<OwnedMessage>);      
+fn input_to_channel(channel_sender: Sender<OwnedMessage>);       
+fn main();       
 
-### file_handler.rs
-pub fn handle_file_upload(channel_sender: Sender<OwnedMessage>, message: &str);
+### file_handler.rs        
+pub fn handle_file_upload(channel_sender: Sender<OwnedMessage>, message: &str);       
 pub fn handle_binary_message(
     data: Vec<u8>,
     file_buffer: &mut Option<(PathBuf, Vec<u8>)>,
-) -> Result<(), String>;
-pub fn save_file(file_path: PathBuf, data: &[u8]) -> std::io::Result<()>;
+) -> Result<(), String>;         
+pub fn save_file(file_path: PathBuf, data: &[u8]) -> std::io::Result<()>;       
