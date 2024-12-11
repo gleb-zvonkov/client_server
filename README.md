@@ -86,12 +86,12 @@ The rest of the guide assumes you are running three clients.
 In each client terminal register a user.
 Terminal 1: `reg -u user1 -p password`.
 Terminal 2: `reg -u user2 -p password`.
-Terminal 2: `reg -u user3 -p password`.
+Terminal 3: `reg -u user3 -p password`.
 
 In each cleint terminal login a user.
 Terminal 1: `login -u user1 -p password`.
 Terminal 2: `login -u user2 -p password`.
-Terminal 2: `login -u user3 -p password`.
+Terminal 3: `login -u user3 -p password`.
 
 Send a message from user1 to user2.
 Terminal 1: `text -u user2 hi other user hows it going`.
