@@ -94,27 +94,27 @@ Terminal 2: `login -u user2 -p password`.
 Terminal 2: `login -u user3 -p password`.
 
 Send a message from user1 to user2.
-Terminal 1: `text -u user2 hi other user hows it going`
+Terminal 1: `text -u user2 hi other user hows it going`.
 
 Send a message from user1 to user2 and user3.
-Terminal 1: `textMultiple -u user2 user3 -t hi two users hows it going`
+Terminal 1: `textMultiple -u user2 user3 -t hi two users hows it going`.
 
 Start a groupchat from user1.
-Terminal 1: `startchat chatx`
+Terminal 1: `startchat chatx`.
 
 Join the groupchat from user2 and user3.
-Terminal 2: `joinchat chatx`
-Terminal 3: `joinchat chatx`
+Terminal 2: `joinchat chatx`.
+Terminal 3: `joinchat chatx`.
 
 Send a message in the groupchat.
-Terminal 1: `message hey guys`
-Terminal 2: `message hey the groupchats working`
-Terminal 3: `message yes it should be working`
+Terminal 1: `message hey guys`.
+Terminal 2: `message hey the groupchats working`.
+Terminal 3: `message yes it should be working`.
 
 Send a file from user1 to user3.
 We have placed a testsend.txt in the client_server folder.
 By sending it to a another user it should appear in the client_server/client subfolder.
-Terminal 1:  `file -u user2 ../testsend.txt`
+Terminal 1:  `file -u user2 ../testsend.txt`.
 Naviagete to client_server/client testsend.txt should now appear there.
 
 
